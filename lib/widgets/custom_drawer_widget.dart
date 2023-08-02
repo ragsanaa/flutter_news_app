@@ -18,7 +18,7 @@ class CustomDrawerWidget extends StatelessWidget {
         padding: const EdgeInsets.all(15.0),
         child: ListView(children: [
           Column(
-            children: drawerList(drawer_items),
+            children: drawerList(drawerItems),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(18, 10, 5, 10),
@@ -28,7 +28,7 @@ class CustomDrawerWidget extends StatelessWidget {
             ),
           ),
           Column(
-            children: drawerList(drawer_items_other),
+            children: drawerList(drawerItemsOther),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(18, 10, 5, 10),

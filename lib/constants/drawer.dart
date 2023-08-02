@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-Map<IconData, String> drawer_items = {
+Map<IconData, String> drawerItems = {
   Icons.language: 'Top stories',
   Icons.curtains_rounded: 'For you',
   Icons.star_border: 'Following',
   Icons.search: 'Saved searches',
 };
 
-Map<IconData, String> drawer_items_other = {
+Map<IconData, String> drawerItemsOther = {
   Icons.flag_outlined: 'U.S.',
   Icons.public: 'World',
   Icons.location_on_outlined: 'Your local news',
