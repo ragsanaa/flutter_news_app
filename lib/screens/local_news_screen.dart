@@ -10,6 +10,6 @@ class LocalNewsScreen extends StatefulWidget {
 class _LocalNewsScreenState extends State<LocalNewsScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return const Column();
   }
 }
