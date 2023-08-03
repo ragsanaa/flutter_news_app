@@ -1,6 +1,10 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_eigth/screens/following_screen.dart';
+import 'package:flutter_eigth/screens/home_screen.dart';
+import 'package:flutter_eigth/screens/local_news_screen.dart';
+import 'package:flutter_eigth/screens/top_story_screen.dart';
 
 class CustomDrawerWidget extends StatelessWidget {
   const CustomDrawerWidget({super.key});
@@ -27,6 +31,14 @@ class CustomDrawerWidget extends StatelessWidget {
                     fontFamily: 'GoogleSans',
                   ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TopStoryScreen(),
+                    ),
+                  );
+                },
               ),
               ListTile(
                 iconColor: Colors.black,
@@ -38,6 +50,14 @@ class CustomDrawerWidget extends StatelessWidget {
                     fontFamily: 'GoogleSans',
                   ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ),
+                  );
+                },
               ),
               ListTile(
                 iconColor: Colors.black,
@@ -49,6 +69,14 @@ class CustomDrawerWidget extends StatelessWidget {
                     fontFamily: 'GoogleSans',
                   ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FollowingScreen(),
+                    ),
+                  );
+                },
               ),
               ListTile(
                 iconColor: Colors.black,
@@ -104,6 +132,14 @@ class CustomDrawerWidget extends StatelessWidget {
                     fontFamily: 'GoogleSans',
                   ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LocalNewsScreen(),
+                    ),
+                  );
+                },
               ),
               ListTile(
                 iconColor: Colors.black,
