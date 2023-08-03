@@ -52,7 +52,7 @@ class LocalWidget extends StatelessWidget {
                       title,
                       style: TextStyle(
                         fontFamily: 'GoogleSans',
-                        fontSize: 23,
+                        fontSize: 17,
                         fontWeight: FontWeight.bold,
                       ),
                       maxLines: 4,
@@ -76,7 +76,25 @@ class LocalWidget extends StatelessWidget {
               ),
           ],
         ),
-      ],
-    );
+        Row(
+          children: [
+            Expanded(
+              flex: 5,
+              child: Text(
+                time,
+                style: TextStyle(
+                    color: Colors.grey[600],
+                    fontFamily: 'GoogleSans',
+                    fontSize: 15),
+              ),
+            ),
+            Icon(
+              Icons.more_vert,
+              color: Colors.grey[600],
+            )
+          ],
+        ), // Add the missing closing parenthesis for the Row widget
+      ], // Add the missing closing bracket for the children list of Column widget
+    ); // Add the missing closing parenthesis for the Column widget
   }
 }
