@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../constants/drawer.dart';
-
 class CustomDrawerWidget extends StatelessWidget {
   const CustomDrawerWidget({super.key});
 
@@ -18,7 +16,52 @@ class CustomDrawerWidget extends StatelessWidget {
         padding: const EdgeInsets.all(15.0),
         child: ListView(children: [
           Column(
-            children: drawerList(drawerItems),
+            children: [
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.language),
+                title: Text(
+                  'Top stories',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.curtains_rounded),
+                title: Text(
+                  'For you',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.star_border),
+                title: Text(
+                  'Following',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.search),
+                title: Text(
+                  'Saved searches',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+            ],
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(18, 10, 5, 10),
@@ -28,7 +71,107 @@ class CustomDrawerWidget extends StatelessWidget {
             ),
           ),
           Column(
-            children: drawerList(drawerItemsOther),
+            children: [
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.flag_outlined),
+                title: Text(
+                  'U.S.',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.public),
+                title: Text(
+                  'World',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.location_on_outlined),
+                title: Text(
+                  'Your local news',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.business_outlined),
+                title: Text(
+                  'Business',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.memory_outlined),
+                title: Text(
+                  'Technology',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.theaters_outlined),
+                title: Text(
+                  'Entertainment',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.directions_bike),
+                title: Text(
+                  'Sports',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.science_outlined),
+                title: Text(
+                  'Science',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+              ListTile(
+                iconColor: Colors.black,
+                textColor: Colors.black,
+                leading: Icon(Icons.fitness_center_outlined),
+                title: Text(
+                  'Health',
+                  style: TextStyle(
+                    fontFamily: 'GoogleSans',
+                  ),
+                ),
+              ),
+            ],
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(18, 10, 5, 10),
