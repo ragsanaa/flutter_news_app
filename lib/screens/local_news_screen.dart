@@ -103,6 +103,16 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 ),
               ],
             ),
+            // Positioned(
+            //   top: 100,
+            //   right: 0,
+            //   child: Image.asset(
+            //     'assets/images/add_to_photo.png',
+            //     width: 40,
+            //     height: 40,
+            //     fit: BoxFit.cover,
+            //   ),
+            // ),
             Row(
               children: [
                 Expanded(
@@ -119,7 +129,7 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
               title: local_list[0].title,
               logoPath: local_list[0].logoPath,
               time: local_list[0].time,
-              isTopStory: false,
+              isTopStory: true,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
