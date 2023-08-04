@@ -4,10 +4,12 @@ class News {
   final String title;
   final String logoPath;
   final String time;
+  final String pressName;
   News({
     required this.imgPath,
     required this.title,
     required this.logoPath,
     required this.time,
+    required this.pressName,
   });
 }

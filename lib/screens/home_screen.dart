@@ -106,6 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
               logoPath: news_list[0].logoPath,
               time: news_list[0].time,
               isTopStory: true,
+              pressName: news_list[0].pressName,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -119,6 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: news_list[1].title,
               logoPath: news_list[1].logoPath,
               time: news_list[1].time,
+              pressName: news_list[1].pressName,
             ),
           ],
         ),
@@ -151,6 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: news_list[2].title,
               logoPath: news_list[2].logoPath,
               time: news_list[2].time,
+              pressName: news_list[2].pressName,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -164,6 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: news_list[3].title,
               logoPath: news_list[3].logoPath,
               time: news_list[3].time,
+              pressName: news_list[3].pressName,
             ),
           ],
         ),
@@ -185,6 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
               logoPath: news_list[4].logoPath,
               time: news_list[4].time,
               isFullCoverage: true,
+              pressName: news_list[4].pressName,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -199,6 +204,7 @@ class _HomeScreenState extends State<HomeScreen> {
               logoPath: news_list[5].logoPath,
               time: news_list[5].time,
               isFullCoverage: true,
+              pressName: news_list[5].pressName,
             ),
           ],
         ),
@@ -218,6 +224,7 @@ class _HomeScreenState extends State<HomeScreen> {
               logoPath: news_list[6].logoPath,
               time: news_list[6].time,
               isNewsIconOn: false,
+              pressName: news_list[6].pressName,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -232,6 +239,7 @@ class _HomeScreenState extends State<HomeScreen> {
               logoPath: news_list[7].logoPath,
               time: news_list[7].time,
               isNewsIconOn: false,
+              pressName: news_list[7].pressName,
             ),
           ],
         ),

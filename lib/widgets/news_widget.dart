@@ -8,6 +8,7 @@ class NewsWidget extends StatelessWidget {
   final String title;
   final String logoPath;
   final String time;
+  final String pressName;
   final bool isTopStory;
   final bool isFullCoverage;
   final bool isNewsIconOn;
@@ -23,6 +24,7 @@ class NewsWidget extends StatelessWidget {
     this.isFullCoverage = false,
     this.isNewsIconOn = true,
     this.isSimilarNews = false,
+    required this.pressName,
   });
 
   @override
@@ -94,7 +96,7 @@ class NewsWidget extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -106,7 +108,44 @@ class NewsWidget extends StatelessWidget {
                         height: 20,
                       ),
                     ),
-                  Icon(Icons.more_vert, size: 15),
+                  PopupMenuButton<int>(
+                    offset: Offset(0, 50),
+                    icon: Icon(Icons.more_vert),
+                    itemBuilder: (context) => [
+                      PopupMenuItem(
+                          value: 0,
+                          child: ListTile(
+                            leading: Icon(Icons.bookmark_border),
+                            title: Text('Save for later'),
+                          )),
+                      PopupMenuItem(
+                          value: 1,
+                          child: ListTile(
+                            leading: Icon(Icons.share),
+                            title: Text('Share'),
+                          )),
+                      PopupMenuItem(
+                          value: 2,
+                          child: ListTile(
+                            leading: Image.asset('assets/images/news_icon.png',
+                                height: 20),
+                            title: Text('View full coverage'),
+                          )),
+                      PopupMenuItem(
+                          value: 3,
+                          child: ListTile(
+                            leading: Icon(Icons.link),
+                            title: Text('Go to the $pressName'),
+                          )),
+                      PopupMenuItem(
+                          value: 3,
+                          child: ListTile(
+                            leading: Icon(Icons.block),
+                            title: Text('Hide all stories from $pressName'),
+                          )),
+                    ],
+                    onSelected: handleClick,
+                  ),
                 ],
               ),
             )
@@ -175,5 +214,14 @@ class NewsWidget extends StatelessWidget {
           )
       ],
     );
+  }
+}
+
+void handleClick(int item) {
+  switch (item) {
+    case 0:
+      break;
+    case 1:
+      break;
   }
 }

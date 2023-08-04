@@ -8,6 +8,7 @@ List<News> news_list = [
         'Judge threatens to sanction Hunter Biden’s lawyers after legal dispute with GOP lawmaker',
     logoPath: 'https://assets.stickpng.com/images/5842ab75a6515b1e0ad75b0b.png',
     time: '37m',
+    pressName: 'CNN',
   ),
   News(
     imgPath:
@@ -17,6 +18,7 @@ List<News> news_list = [
     logoPath:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Associated_Press_logo_2012.svg/1200px-Associated_Press_logo_2012.svg.png',
     time: '1h',
+    pressName: 'Associated Press',
   ),
   News(
     imgPath:
@@ -26,6 +28,7 @@ List<News> news_list = [
     logoPath:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/InsiderLogo.svg/1200px-InsiderLogo.svg.png',
     time: '17h',
+    pressName: 'Insider',
   ),
   News(
     imgPath:
@@ -35,6 +38,7 @@ List<News> news_list = [
     logoPath:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/CNET_%282022%29.svg/2560px-CNET_%282022%29.svg.png',
     time: '1h ago',
+    pressName: 'CNET',
   ),
   News(
     imgPath:
@@ -44,6 +48,7 @@ List<News> news_list = [
     logoPath:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Engadget-logo.svg/1200px-Engadget-logo.svg.png',
     time: '54 minutes ago',
+    pressName: 'Engadget',
   ),
   News(
     imgPath:
@@ -52,6 +57,7 @@ List<News> news_list = [
     logoPath:
         'https://static.wikia.nocookie.net/logopedia/images/7/7a/YourTango-logo-2016.png/revision/latest/scale-to-width-down/300?cb=20160122061315',
     time: '14 hours ago',
+    pressName: 'YourTango',
   ),
   News(
     imgPath:
@@ -60,6 +66,7 @@ List<News> news_list = [
     logoPath:
         'https://images.squarespace-cdn.com/content/v1/5d580747908cdc0001e6792d/1583086184753-UBS6SRKA1XT1LKM8JT9L/newsbtc.png',
     time: '5 days ago',
+    pressName: 'NewsBTC',
   ),
   News(
     imgPath:
@@ -68,6 +75,7 @@ List<News> news_list = [
     logoPath:
         'https://www.stvincenttimes.com/wp-content/uploads/2021/11/ST-LOGO.png',
     time: '16 hours ago',
+    pressName: 'St. Vincent Times',
   ),
   News(
     imgPath:
@@ -76,6 +84,7 @@ List<News> news_list = [
     logoPath:
         'https://cdn.shopify.com/s/files/1/0104/5072/files/Logo-TheKitchn_01.svg?17881674156645011236',
     time: '19 hours ago',
+    pressName: 'The Kitchn',
   ),
   News(
     imgPath:
@@ -84,5 +93,6 @@ List<News> news_list = [
     logoPath:
         'https://cdn.shopify.com/s/files/1/0104/5072/files/Logo-TheKitchn_01.svg?17881674156645011236',
     time: '9 hours ago',
+    pressName: 'The Kitchn',
   )
 ];
