@@ -10,60 +10,63 @@ class DrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.zero,
-      ),
-      backgroundColor: Color.fromARGB(255, 241, 244, 249),
-      child: Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: ListView(
-          children: [
-            itemCreator(context, drawerItems),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(18, 10, 5, 10),
-              child: Divider(
-                color: Colors.grey[400],
-                thickness: 1,
-              ),
-            ),
-            ListTile(
-              title: Text('Languages & region',
-                  style: TextStyle(
-                    fontFamily: 'GoogleSans',
-                    color: Colors.black,
-                  )),
-              subtitle: Text(
-                'English (United States)',
-                style: TextStyle(
-                  fontFamily: 'GoogleSans',
-                  color: Colors.grey[800],
+    return ScrollConfiguration(
+      behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+      child: Drawer(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.zero,
+        ),
+        backgroundColor: Color.fromARGB(255, 241, 244, 249),
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: ListView(
+            children: [
+              itemCreator(context, drawerItems),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(18, 10, 5, 10),
+                child: Divider(
+                  color: Colors.grey[400],
+                  thickness: 1,
                 ),
               ),
-            ),
-            ListTile(
-              title: Text('Settings',
+              ListTile(
+                title: Text('Languages & region',
+                    style: TextStyle(
+                      fontFamily: 'GoogleSans',
+                      color: Colors.black,
+                    )),
+                subtitle: Text(
+                  'English (United States)',
                   style: TextStyle(
                     fontFamily: 'GoogleSans',
-                    color: Colors.black,
-                  )),
-            ),
-            ListTile(
-              title: Text('Get the iOS app',
-                  style: TextStyle(
-                    fontFamily: 'GoogleSans',
-                    color: Colors.black,
-                  )),
-              trailing: Icon(Icons.open_in_new),
-            ),
-            ListTile(
-              title: Text('Send feedback',
-                  style: TextStyle(
-                    fontFamily: 'GoogleSans',
-                    color: Colors.black,
-                  )),
-            ),
-          ],
+                    color: Colors.grey[800],
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text('Settings',
+                    style: TextStyle(
+                      fontFamily: 'GoogleSans',
+                      color: Colors.black,
+                    )),
+              ),
+              ListTile(
+                title: Text('Get the iOS app',
+                    style: TextStyle(
+                      fontFamily: 'GoogleSans',
+                      color: Colors.black,
+                    )),
+                trailing: Icon(Icons.open_in_new),
+              ),
+              ListTile(
+                title: Text('Send feedback',
+                    style: TextStyle(
+                      fontFamily: 'GoogleSans',
+                      color: Colors.black,
+                    )),
+              ),
+            ],
+          ),
         ),
       ),
     );
