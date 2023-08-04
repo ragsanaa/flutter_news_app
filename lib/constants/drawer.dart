@@ -7,9 +7,6 @@ Map<IconData, String> drawerItems = {
   Icons.curtains_rounded: 'For you',
   Icons.star_border: 'Following',
   Icons.search: 'Saved searches',
-};
-
-Map<IconData, String> drawerItemsOther = {
   Icons.flag_outlined: 'U.S.',
   Icons.public: 'World',
   Icons.location_on_outlined: 'Your local news',
