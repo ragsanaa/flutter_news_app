@@ -60,6 +60,31 @@ flutter:
     - assets/images/add_to_photo.png
     - assets/images/baku.png
     - assets/images/trendd.png
+    - assets/images/maps.png
+    - assets/images/google_appbar.png
+    - assets/images/profile_appbar.png
+    - assets/images/youtube_appbar.png
+    - assets/images/googleplay_appbar.png
+    - assets/images/googlenews_appbar.png
+    - assets/images/googlegmail_appbar.png
+    - assets/images/googlemeet_appbar.png
+    - assets/images/googlechat_appbar.png
+    - assets/images/contacts_appbar.png
+    - assets/images/googledrive_appbar.png
+    - assets/images/googlecalendar_appbar.png
+    - assets/images/googletranslate_appbar.png
+    - assets/images/googlephotos_appbar.png
+    - assets/images/googlechrome_appbar.png
+    - assets/images/googleads_appbar.png
+    - assets/images/googleshopping_appbar.png
+    - assets/images/buisness_appbar.png
+    - assets/images/finance_appbar.png
+    - assets/images/googledocs_appbar.png
+    - assets/images/googlesheets_appbar.png
+    - assets/images/googleblogger_appbar.png
+    - assets/images/googleforms_appbar.png
+    - assets/images/googleone_appbar.png
+    - assets/images/keep_appbar.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
