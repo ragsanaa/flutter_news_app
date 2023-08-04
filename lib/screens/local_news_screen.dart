@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eigth/constants/local_list.dart';
 import 'package:flutter_eigth/widgets/local_widget.dart';
+import 'package:flutter_eigth/widgets/news_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -124,12 +125,14 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 ),
               ],
             ),
-            LocalWidget(
+            NewsWidget(
               imgPath: local_list[0].imgPath,
               title: local_list[0].title,
               logoPath: local_list[0].logoPath,
               time: local_list[0].time,
               isTopStory: true,
+              pressName: local_list[0].pressName,
+              isNewsIconOn: false,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -138,12 +141,14 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 thickness: 1,
               ),
             ),
-            LocalWidget(
+            NewsWidget(
               imgPath: local_list[1].imgPath,
               title: local_list[1].title,
               logoPath: local_list[1].logoPath,
               time: local_list[1].time,
               isTopStory: false,
+              pressName: local_list[1].pressName,
+              isNewsIconOn: false,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -152,12 +157,14 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 thickness: 1,
               ),
             ),
-            LocalWidget(
+            NewsWidget(
               imgPath: local_list[2].imgPath,
               title: local_list[2].title,
               logoPath: local_list[2].logoPath,
               time: local_list[2].time,
               isTopStory: false,
+              pressName: local_list[2].pressName,
+              isNewsIconOn: false,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -166,12 +173,14 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 thickness: 1,
               ),
             ),
-            LocalWidget(
+            NewsWidget(
               imgPath: local_list[3].imgPath,
               title: local_list[3].title,
               logoPath: local_list[3].logoPath,
               time: local_list[3].time,
               isTopStory: false,
+              pressName: local_list[3].pressName,
+              isNewsIconOn: false,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
@@ -180,12 +189,14 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 thickness: 1,
               ),
             ),
-            LocalWidget(
+            NewsWidget(
               imgPath: local_list[4].imgPath,
               title: local_list[4].title,
               logoPath: local_list[4].logoPath,
               time: local_list[4].time,
               isTopStory: false,
+              pressName: local_list[4].pressName,
+              isNewsIconOn: false,
             ),
           ],
         ),

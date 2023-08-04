@@ -143,6 +143,18 @@ class NewsWidget extends StatelessWidget {
                             leading: Icon(Icons.block),
                             title: Text('Hide all stories from $pressName'),
                           )),
+                      PopupMenuItem(
+                          value: 3,
+                          child: ListTile(
+                            leading: Icon(Icons.thumb_up),
+                            title: Text('More stories like this'),
+                          )),
+                      PopupMenuItem(
+                          value: 3,
+                          child: ListTile(
+                            leading: Icon(Icons.thumb_down),
+                            title: Text('Fewer stories like this'),
+                          )),
                     ],
                     onSelected: handleClick,
                   ),
