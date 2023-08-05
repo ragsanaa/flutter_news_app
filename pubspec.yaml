@@ -60,7 +60,6 @@ flutter:
     - assets/images/ssearches.png
     - assets/images/sstories.png
     - assets/images/add_to_photo.png
-    - assets/images/baku.png
     - assets/images/trendd.png
     - assets/images/maps.png
     - assets/images/google_appbar.png
@@ -87,6 +86,7 @@ flutter:
     - assets/images/googleforms_appbar.png
     - assets/images/googleone_appbar.png
     - assets/images/keep_appbar.png
+    - assets/images/location.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

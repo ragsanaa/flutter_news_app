@@ -55,65 +55,85 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                 ),
               ],
             ),
-            Stack(
-              alignment: Alignment.topRight,
+            Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(13.0),
-                  child: Image.network(
-                    'https://i.pinimg.com/originals/da/2c/80/da2c80e66fe4bd3a539631bbc8724a8f.png',
-                    width: 81,
-                    height: 81,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Positioned(
-                  top: 26,
-                  left: 26,
-                  child: ClipOval(
-                    child: Image.network(
-                      'https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/02/01210427/Featured-Inside.jpeg',
-                      width: 55,
-                      height: 55,
-                      fit: BoxFit.cover,
+                Stack(
+                  alignment: Alignment.topRight,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(13.0),
+                      child: Image.network(
+                        'https://i.pinimg.com/originals/da/2c/80/da2c80e66fe4bd3a539631bbc8724a8f.png',
+                        width: 81,
+                        height: 81,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                ),
-                Positioned(
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Baku',
-                          style: GoogleFonts.lora(
-                            fontSize: 13,
-                            height: 1,
-                            fontWeight: FontWeight.w600,
-                            color: const Color.fromARGB(255, 20, 107, 178),
-                          ),
+                    Positioned(
+                      top: 26,
+                      left: 26,
+                      child: ClipOval(
+                        child: Image.network(
+                          'https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/02/01210427/Featured-Inside.jpeg',
+                          width: 55,
+                          height: 55,
+                          fit: BoxFit.cover,
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                    Positioned(
+                      top: 64,
+                      left: 63,
+                      child: Image.asset(
+                        'assets/images/location.png',
+                        width: 16,
+                        height: 16,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Baku',
+                              style: GoogleFonts.lora(
+                                fontSize: 13,
+                                height: 1,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromARGB(255, 20, 107, 178),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  alignment: Alignment.topRight,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(13.0),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/images/add_to_photo.png',
+                          width: 56,
+                          height: 56,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
-            // Positioned(
-            //   top: 100,
-            //   right: 0,
-            //   child: Image.asset(
-            //     'assets/images/add_to_photo.png',
-            //     width: 40,
-            //     height: 40,
-            //     fit: BoxFit.cover,
-            //   ),
-            // ),
-            const Row(
+            Row(
               children: [
                 Expanded(
                   child: Divider(
