@@ -136,6 +136,8 @@ class _NewsWidgetState extends State<NewsWidget> {
                       ),
                     ),
                   PopupMenuButton<int>(
+                    shadowColor: Colors.grey,
+                    surfaceTintColor: Colors.white,
                     offset: Offset(0, 50),
                     icon: Icon(Icons.more_vert),
                     itemBuilder: (context) => [

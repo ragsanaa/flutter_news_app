@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-class AppBarWidget extends StatefulWidget implements PreferredSizeWidget {
+class AppBarWidget extends StatefulWidget {
   final double preferredHeight;
 
   const AppBarWidget({Key? key, this.preferredHeight = kToolbarHeight})
@@ -10,9 +10,6 @@ class AppBarWidget extends StatefulWidget implements PreferredSizeWidget {
 
   @override
   _AppBarWidgetState createState() => _AppBarWidgetState();
-
-  @override
-  Size get preferredSize => Size.fromHeight(preferredHeight);
 }
 
 class _AppBarWidgetState extends State<AppBarWidget> {
@@ -74,9 +71,14 @@ class _AppBarWidgetState extends State<AppBarWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(10, 0, 10, 5),
-                child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/avatar.png'),
+                padding: const EdgeInsets.fromLTRB(5, 0, 5, 5),
+                child: IconButton(
+                  icon: CircleAvatar(
+                    backgroundImage: AssetImage('assets/images/avatar.png'),
+                  ),
+                  onPressed: () {
+                    _showAccountDialog(context);
+                  },
                 ),
               ),
             ],
@@ -278,6 +280,70 @@ class _AppBarWidgetState extends State<AppBarWidget> {
                         'More from Google',
                       ),
                     ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  void _showAccountDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Align(
+          alignment: Alignment.topRight,
+          child: SizedBox(
+            height: 500,
+            child: AlertDialog(
+              scrollable: true,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                side: BorderSide(
+                    color: const Color.fromARGB(233, 238, 246, 255),
+                    width: 11.0,
+                    strokeAlign: BorderSide.strokeAlignOutside),
+              ),
+              backgroundColor: Color.fromARGB(248, 250, 253, 255),
+              surfaceTintColor: Color.fromARGB(248, 250, 253, 255),
+              content: Column(
+                children: [
+                  ListTile(
+                    leading: Image.asset('assets/images/avatar.png'),
+                    title: Text('Ragsana Alizada'),
+                    subtitle: Text('raqsanaalizade1@gmail.com'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text('Account 1'),
+                    subtitle: Text('account1@gmail.com'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text('Account 2'),
+                    subtitle: Text('account2@gmail.com'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text('Account 3'),
+                    subtitle: Text('account3@gmail.com'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.person_add_alt),
+                    title: Text('Add another account'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.exit_to_app),
+                    title: Text('Sign out of all accounts'),
+                    onTap: () {},
                   ),
                 ],
               ),
