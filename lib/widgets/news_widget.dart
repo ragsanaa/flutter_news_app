@@ -167,20 +167,20 @@ class _NewsWidgetState extends State<NewsWidget> {
                             title: Text('Go to the ${widget.pressName}'),
                           )),
                       PopupMenuItem(
-                          value: 3,
+                          value: 4,
                           child: ListTile(
                             leading: Icon(Icons.block),
                             title: Text(
                                 'Hide all stories from ${widget.pressName}'),
                           )),
                       PopupMenuItem(
-                          value: 3,
+                          value: 5,
                           child: ListTile(
                             leading: Icon(Icons.thumb_up),
                             title: Text('More stories like this'),
                           )),
                       PopupMenuItem(
-                          value: 3,
+                          value: 6,
                           child: ListTile(
                             leading: Icon(Icons.thumb_down),
                             title: Text('Fewer stories like this'),
@@ -300,6 +300,16 @@ void handleClick(int item) {
     case 0:
       break;
     case 1:
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
+    case 5:
+      break;
+    case 6:
       break;
   }
 }

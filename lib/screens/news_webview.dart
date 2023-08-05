@@ -51,10 +51,62 @@ class _NewsWebViewState extends State<NewsWebView> {
               ),
             ],
           ),
-          actions: const [],
+          actions: [
+            IconButton(
+                color: Colors.black87,
+                onPressed: () => _controller.reload(),
+                icon: Image.asset(
+                  'assets/images/news_icon.png',
+                  width: 20,
+                  height: 20,
+                )),
+            PopupMenuButton(
+              shadowColor: Colors.grey,
+              surfaceTintColor: Colors.white,
+              offset: Offset(0, 50),
+              icon: Icon(Icons.link, color: Colors.black87),
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: 0,
+                  child: Text(urlGlobal),
+                ),
+              ],
+              onSelected: handleClick,
+            ),
+            PopupMenuButton(
+              shadowColor: Colors.grey,
+              surfaceTintColor: Colors.white,
+              offset: Offset(0, 50),
+              icon: Icon(Icons.more_horiz, color: Colors.black87),
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                    value: 0,
+                    child: ListTile(
+                      leading: Icon(Icons.bookmark_border),
+                      title: Text('Save for later'),
+                    )),
+                PopupMenuItem(
+                    value: 1,
+                    child: ListTile(
+                      leading: Icon(Icons.share),
+                      title: Text('Share'),
+                    )),
+              ],
+              onSelected: handleClick,
+            ),
+          ],
         ),
         body: WebViewWidget(controller: _controller),
       ),
     );
+  }
+}
+
+void handleClick(int item) {
+  switch (item) {
+    case 0:
+      break;
+    case 1:
+      break;
   }
 }
