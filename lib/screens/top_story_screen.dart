@@ -35,6 +35,8 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NewsWidget(
+              url:
+                  "https://www.axios.com/2023/07/31/devon-archer-testify-hunter-biden",
               imgPath:
                   'https://images.axios.com/Xz8dywtvKPZvur2pMKmT0lqe2mU=/1920x1080/smart/2023/07/31/1690837536781.jpg?w=1920',
               title: 'Hunter Biden associate describes "illusion of access"',
@@ -51,6 +53,7 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NewsWidget(
+              url: "https://www.bbc.com/news/world-europe-66368016",
               imgPath:
                   'https://ichef.bbci.co.uk/news/976/cpsprodpb/760C/production/_130602203_moscow_drone_attack.jpg.webp',
               title:
@@ -67,6 +70,8 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NewsWidget(
+              url:
+                  "https://apnews.com/article/henrietta-lacks-hela-cells-thermo-fisher-scientific-bfba4a6c10396efa34c9b79a544f0729",
               imgPath:
                   'https://dims.apnews.com/dims4/default/3293b73/2147483647/strip/true/crop/4919x3278+0+71/resize/980x653!/format/webp/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3a%2F16%2F754a93a02093e716ecccab906f17%2F3cf1b209c56d46fda2a4691eda78d7bd',
               title:
@@ -83,6 +88,8 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NewsWidget(
+              url:
+                  "https://apnews.com/article/trump-legal-bills-pac-defense-fund-campaign-filing-2024-36fe10e4988a56de34f120cff38e1552",
               imgPath:
                   'https://dims.apnews.com/dims4/default/0f5fa58/2147483647/strip/true/crop/4518x3012+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fb4%2Fe5%2F6fe440a63afca1b6db354632cd79%2F89dde514273d46069ff7f9b00066ac36',
               title:
@@ -144,6 +151,8 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NewsWidget(
+              url:
+                  "https://www.mmorpg.com/news/ashes-of-creation-shows-updated-cleric-highwaymen-hills-location-and-dynamic-systems-in-verra-2000128585",
               imgPath:
                   'https://media.mmorpg.com/images/heroes/posts/128585.jpg?cb=5E2406AB9677EC4F56C82695634BE9A5',
               title:
@@ -158,6 +167,8 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: NewsWidget(
+              url:
+                  "https://www.sportingnews.com/in/football/news/how-many-goals-cristiano-ronaldo-scored-al-nassr-stats-2023-2024/kysql9ycepndbqhogclzdzwc",
               imgPath:
                   'https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2023-07/cristiano%20ronaldo%20al%20nassr%202023-2024.jpg.webp?itok=qQ0t2I7m',
               title:

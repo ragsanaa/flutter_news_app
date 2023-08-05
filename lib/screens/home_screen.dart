@@ -101,6 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             NewsWidget(
+              url: news_list[0].url,
               imgPath: news_list[0].imgPath,
               title: news_list[0].title,
               logoPath: news_list[0].logoPath,
@@ -116,6 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             NewsWidget(
+              url: news_list[1].url,
               imgPath: news_list[1].imgPath,
               title: news_list[1].title,
               logoPath: news_list[1].logoPath,
@@ -149,6 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             NewsWidget(
+              url: news_list[2].url,
               imgPath: news_list[2].imgPath,
               title: news_list[2].title,
               logoPath: news_list[2].logoPath,
@@ -163,6 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             NewsWidget(
+              url: news_list[3].url,
               imgPath: news_list[3].imgPath,
               title: news_list[3].title,
               logoPath: news_list[3].logoPath,
@@ -184,6 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             NewsWidget(
+              url: news_list[4].url,
               imgPath: news_list[4].imgPath,
               title: news_list[4].title,
               logoPath: news_list[4].logoPath,
@@ -199,6 +204,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             NewsWidget(
+              url: news_list[5].url,
               imgPath: news_list[5].imgPath,
               title: news_list[5].title,
               logoPath: news_list[5].logoPath,
@@ -219,6 +225,7 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             NewsWidget(
+              url: news_list[6].url,
               imgPath: news_list[6].imgPath,
               title: news_list[6].title,
               logoPath: news_list[6].logoPath,
@@ -234,6 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             NewsWidget(
+              url: news_list[7].url,
               imgPath: news_list[7].imgPath,
               title: news_list[7].title,
               logoPath: news_list[7].logoPath,

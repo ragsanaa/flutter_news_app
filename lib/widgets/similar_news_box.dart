@@ -7,8 +7,10 @@ class CustomBox extends StatelessWidget {
   final String logoPath;
   final String time;
   final String pressName;
+  final String url;
   const CustomBox({
     super.key,
+    required this.url,
     required this.title,
     required this.logoPath,
     required this.time,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_eigth/constants/local_list.dart';
-import 'package:flutter_eigth/widgets/local_widget.dart';
 import 'package:flutter_eigth/widgets/news_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,9 +16,9 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        margin: EdgeInsets.only(bottom: 10),
-        padding: EdgeInsets.fromLTRB(20, 25, 20, 25),
-        decoration: BoxDecoration(
+        margin: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.fromLTRB(20, 25, 20, 25),
+        decoration: const BoxDecoration(
           color: Colors.white,
         ),
         child: Column(
@@ -28,7 +27,7 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -60,7 +59,7 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
               alignment: Alignment.topRight,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(13.0),
+                  padding: const EdgeInsets.all(13.0),
                   child: Image.network(
                     'https://i.pinimg.com/originals/da/2c/80/da2c80e66fe4bd3a539631bbc8724a8f.png',
                     width: 81,
@@ -85,7 +84,7 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                   left: 0,
                   right: 0,
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -95,7 +94,7 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
                             fontSize: 13,
                             height: 1,
                             fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 20, 107, 178),
+                            color: const Color.fromARGB(255, 20, 107, 178),
                           ),
                         ),
                       ],
@@ -114,7 +113,7 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
             //     fit: BoxFit.cover,
             //   ),
             // ),
-            Row(
+            const Row(
               children: [
                 Expanded(
                   child: Divider(
@@ -126,76 +125,81 @@ class _LocalNewsScreenState extends State<LocalNewsScreen> {
               ],
             ),
             NewsWidget(
-              imgPath: local_list[0].imgPath,
-              title: local_list[0].title,
-              logoPath: local_list[0].logoPath,
-              time: local_list[0].time,
+              url: localList[0].url,
+              imgPath: localList[0].imgPath,
+              title: localList[0].title,
+              logoPath: localList[0].logoPath,
+              time: localList[0].time,
               isTopStory: true,
-              pressName: local_list[0].pressName,
+              pressName: localList[0].pressName,
               isNewsIconOn: false,
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
               child: Divider(
                 color: Colors.grey[300],
                 thickness: 1,
               ),
             ),
             NewsWidget(
-              imgPath: local_list[1].imgPath,
-              title: local_list[1].title,
-              logoPath: local_list[1].logoPath,
-              time: local_list[1].time,
+              url: localList[1].url,
+              imgPath: localList[1].imgPath,
+              title: localList[1].title,
+              logoPath: localList[1].logoPath,
+              time: localList[1].time,
               isTopStory: false,
-              pressName: local_list[1].pressName,
+              pressName: localList[1].pressName,
               isNewsIconOn: false,
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
               child: Divider(
                 color: Colors.grey[300],
                 thickness: 1,
               ),
             ),
             NewsWidget(
-              imgPath: local_list[2].imgPath,
-              title: local_list[2].title,
-              logoPath: local_list[2].logoPath,
-              time: local_list[2].time,
+              url: localList[2].url,
+              imgPath: localList[2].imgPath,
+              title: localList[2].title,
+              logoPath: localList[2].logoPath,
+              time: localList[2].time,
               isTopStory: false,
-              pressName: local_list[2].pressName,
+              pressName: localList[2].pressName,
               isNewsIconOn: false,
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
               child: Divider(
                 color: Colors.grey[300],
                 thickness: 1,
               ),
             ),
             NewsWidget(
-              imgPath: local_list[3].imgPath,
-              title: local_list[3].title,
-              logoPath: local_list[3].logoPath,
-              time: local_list[3].time,
+              url: localList[3].url,
+              imgPath: localList[3].imgPath,
+              title: localList[3].title,
+              logoPath: localList[3].logoPath,
+              time: localList[3].time,
               isTopStory: false,
-              pressName: local_list[3].pressName,
+              pressName: localList[3].pressName,
               isNewsIconOn: false,
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
               child: Divider(
                 color: Colors.grey[300],
                 thickness: 1,
               ),
             ),
             NewsWidget(
-              imgPath: local_list[4].imgPath,
-              title: local_list[4].title,
-              logoPath: local_list[4].logoPath,
-              time: local_list[4].time,
+              url: localList[4].url,
+              imgPath: localList[4].imgPath,
+              title: localList[4].title,
+              logoPath: localList[4].logoPath,
+              time: localList[4].time,
               isTopStory: false,
-              pressName: local_list[4].pressName,
+              pressName: localList[4].pressName,
               isNewsIconOn: false,
             ),
           ],
